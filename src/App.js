@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './containers/header/Header';
+import Dashboard from "./containers/dashboard/Dashboard";
+import LoggedInUserContext from './context/LoggedInUser';
 function App() {
+  const LoggedInUser = { name: "John", email: "john@gmail.com", id: "1" };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LoggedInUserContext.Provider value={LoggedInUser}>
+      <div className="App">
+        <Header></Header>
+        <div className="center-container">
+          <section className="center-column">
+            <Dashboard></Dashboard>
+          </section>
+        </div>
+      
+      </div>
+    </LoggedInUserContext.Provider>
   );
 }
 

@@ -1,0 +1,38 @@
+.total-balance{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background: #eeeeee;
+    color: #999;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.total-balance .block {
+    border-left: 1px solid #ddd;
+    flex: 1;
+
+}
+.avatar-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    margin-right: 10px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.expense-list {
+    flex: 1;
+}
+.summary{
+    display: flex;
+    padding: 10px;
+}
+.summary .expense-list:last-child{
+    padding: 0 10px;
+    border-left: 1px solid #eee;
+}
+.flex {
+    display: flex;
+}

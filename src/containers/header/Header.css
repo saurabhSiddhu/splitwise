@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25%;
+  box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+  background-color: #5bc5a7;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+.navbar img {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #3eaf8f;
+  background: #3eaf8f;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+.navbar h5 {
+  margin: 0;
+}
